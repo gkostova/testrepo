@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dunes-script-module name="pushtogitaction" result-type="string" api-version="6.0.0" id="bbc1ef08-adf1-401f-9b50-92f30b60ebb4" version="0.0.0" category-name="com.vmware.test">
+  <param n="input" t="string"><![CDATA[]]></param>
+  <script encoded="false"><![CDATA[var input = "test";
+System.log(input);]]></script>
+</dunes-script-module>
