@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:workflow xmlns:ns2="http://vmware.com/vco/workflow" root-name="item2" object-name="workflow:name=generic" id="ce1dc434-a76e-478a-a4db-8852cbd192d4" editor-version="2.0" version="0.0.1" api-version="6.0.0" restartMode="1" resumeFromFailedMode="0">
+    <display-name>NestedWf</display-name>
+    <position y="50.0" x="100.0"/>
+    <input/>
+    <output/>
+    <workflow-item name="item0" type="end" end-mode="0" comparator="0">
+        <position y="50.69151636269153" x="386.97471886930623"/>
+    </workflow-item>
+    <workflow-item name="item1" out-name="item0" type="multiple" comparator="0">
+        <display-name>nested</display-name>
+        <script></script>
+        <in-binding/>
+        <out-binding/>
+        <workflow-subelements-list>
+            <workflow-subelement name="item0" linked-workflow-id="b2f07dfd-96c5-47f1-bedd-983deab01164">
+                <display-name>UItest</display-name>
+                <in-binding/>
+                <out-binding/>
+            </workflow-subelement>
+        </workflow-subelements-list>
+        <position y="61.58995386269153" x="259.97471886930623"/>
+    </workflow-item>
+    <workflow-item name="item2" out-name="item1" type="task" comparator="0">
+        <display-name>Scriptable task</display-name>
+        <script encoded="false"></script>
+        <in-binding/>
+        <out-binding/>
+        <description>Simple task with custom script capability.</description>
+        <position y="57.14576123310357" x="163.48735943465311"/>
+    </workflow-item>
+    <presentation/>
+</ns2:workflow>
